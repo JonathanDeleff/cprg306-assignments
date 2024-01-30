@@ -23,3 +23,11 @@ export const Week3 = () => {
         </Link>
     );
 };
+
+export const Week4 = () => {
+  return(
+      <Link href="/week-4">
+          Week 4
+      </Link>
+  );
+};

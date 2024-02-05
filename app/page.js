@@ -7,7 +7,7 @@ export default function Home() {
       <div className="text-1.5xl">
         CPRG 306: Web Development 2 - Assignments
       </div>
-      <div>
+      <div className="flex flex-row">
         <Week2 />
         <Week3 />
         <Week4 />

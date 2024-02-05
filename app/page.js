@@ -7,9 +7,11 @@ export default function Home() {
       <div className="text-1.5xl">
         CPRG 306: Web Development 2 - Assignments
       </div>
-      <Week2/>
-      <Week3/>
-      <Week4/>
+      <div>
+        <Week2 />
+        <Week3 />
+        <Week4 />
+      </div>
     </main>
-  )
+  );
 }

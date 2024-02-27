@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Week2, Week3, Week4 } from "@/Components/buttons";
+import { Week2, Week3, Week4, Week5 } from "@/Components/buttons";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         <Week2 />
         <Week3 />
         <Week4 />
+        <Week5/>
       </div>
     </main>
   );

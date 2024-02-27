@@ -31,3 +31,11 @@ export const Week4 = () => {
     </div>
   );
 };
+
+export const Week5 = () => {
+  return (
+    <div className="border-2 border-slate-400 p-1 m-1">
+      <Link href="/week-5">Week 5</Link>
+    </div>
+  );
+};

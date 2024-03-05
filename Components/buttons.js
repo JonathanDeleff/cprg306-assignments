@@ -47,3 +47,11 @@ export const Week6 = () => {
     </div>
   );
 };
+
+export const Week7 = () => {
+  return (
+    <div className="border-2 border-slate-400 p-1 m-1">
+      <Link href="/week-7">Week 7</Link>
+    </div>
+  );
+};

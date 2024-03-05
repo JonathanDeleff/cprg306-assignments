@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 
-export const NewItem = () => {
+export const NewItem = ({onSubmit}) => {
     
     const [name, setName] = useState("")
     const [quantity, setQuantity] = useState(1)
@@ -12,9 +12,11 @@ export const NewItem = () => {
         const item = {name, quantity, category}
         console.log(`Name: ${name}\nQuantity: ${quantity}\nCategory: ${category}`)
         alert(`Name: ${name}\nQuantity: ${quantity}\nCategory: ${category}`)
+        onSubmit(item);
         setName("");
         setQuantity(1);
         setCategory("produce");
+        
     }
     
     return (

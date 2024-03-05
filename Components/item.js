@@ -5,12 +5,12 @@ import { useState } from "react";
 
 
 
-export const Item = () => {
+export const Item = ({items}) => {
   
   const [sortBy, setSortBy] = useState("name")
   
   const getSortedItems = () => {
-    return [...itemList].sort((a, b) => {
+    return [...items].sort((a, b) => {
 
       const valueA = a[sortBy].toLowerCase(); 
       const valueB = b[sortBy].toLowerCase();

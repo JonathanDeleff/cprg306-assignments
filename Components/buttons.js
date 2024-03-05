@@ -39,3 +39,11 @@ export const Week5 = () => {
     </div>
   );
 };
+
+export const Week6 = () => {
+  return (
+    <div className="border-2 border-slate-400 p-1 m-1">
+      <Link href="/week-6">Week 6</Link>
+    </div>
+  );
+};

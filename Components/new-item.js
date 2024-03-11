@@ -45,7 +45,7 @@ export const NewItem = ({onSubmit}) => {
                     id="dropdown" 
                     value={category}
                     onChange={(event) => setCategory(event.target.value)} 
-                    className="text-black border-2 border-sky-300 bg-slate-100 p-1"
+                    className="text-black border-2 border-sky-300 bg-slate-100 p-1 w-60"
 
                 >
                     <option value="produce">Produce</option>

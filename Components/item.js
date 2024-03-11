@@ -1,11 +1,10 @@
 "use client";
-import { itemList } from "./item-list";
 import { useState } from "react";
 
 
 
 
-export const Item = ({items}) => {
+export const Item = ({items, onItemSelect}) => {
   
   const [sortBy, setSortBy] = useState("name")
   
@@ -23,10 +22,12 @@ export const Item = ({items}) => {
 
   const getButtonClass = (buttonSortBy) => {
     return `m-1 p-2 ${
-      sortBy === buttonSortBy ? "bg-blue-400" : "bg-sky-300"
-    } text-black font-bold py-2 px-4 rounded mr-2`;
+      sortBy === buttonSortBy ? "bg-blue-500" : "bg-sky-300"
+    } text-black font-bold py-2 px-4 rounded mr-2 hover:bg-blue-400`;
   };
 
+
+    
   const sortedItems = getSortedItems();
 
   return (
@@ -46,19 +47,20 @@ export const Item = ({items}) => {
           Category
         </button>
       </div>
-      {sortedItems.map((item, index) => {
-        return (
-          <div
+      
+        
+      <ul>
+        {sortedItems.map((item, index) => (
+          <li
             key={index}
-            className="flex flex-col border-2 border-sky-300 p-2 m-2"
+            className="item-list cursor-pointer flex flex-col border-2 border-sky-300 p-2 m-2 hover:bg-sky-500" 
+            onClick={() => onItemSelect(item)}
           >
-            <div className="flex justify-center">
-              {item.quantity} - {item.name}
-            </div>
+            <div className="flex justify-center">{item.quantity} - {item.name}</div>
             <div className="flex justify-center">{item.category}</div>
-          </div>
-        );
-      })}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

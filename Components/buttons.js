@@ -41,3 +41,22 @@ export const Week7 = () => {
       <Link className="border-2 border-slate-400 p-1 m-1" href="/week-7">Week 7</Link>
   );
 };
+
+export const Week8 = () => {
+  return (
+      <Link className="border-2 border-slate-400 p-1 m-1" href="/week-8">Week 8</Link>
+  );
+};
+
+export const ShoppingList = () => {
+  return (
+      <Link className="border-2 border-sky-300 p-1 m-1" href="/week-8/shopping-list">ShoppingList</Link>
+  );
+};
+
+export const Week8Back = () => {
+  return (
+      <Link className="border-2 border-slate-400 p-1 m-1" href="/week-8">Back</Link>
+  );
+}
+

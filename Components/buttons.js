@@ -48,9 +48,21 @@ export const Week8 = () => {
   );
 };
 
+export const Week10 = () => {
+  return (
+      <Link className="border-2 border-slate-400 p-1 m-1" href="/week-10">Week 10</Link>
+  );
+};
+
 export const ShoppingList = () => {
   return (
       <Link className="border-2 border-sky-300 p-1 m-1" href="/week-8/shopping-list">ShoppingList</Link>
+  );
+};
+
+export const ShoppingList2 = () => {
+  return (
+      <Link className="border-2 border-sky-300 p-1 m-1" href="/week-10/shopping-list">ShoppingList</Link>
   );
 };
 
@@ -58,5 +70,12 @@ export const Week8Back = () => {
   return (
       <Link className="border-2 border-slate-400 p-1 m-1" href="/week-8">Back</Link>
   );
+};
+
+export const Week10Back = () => {
+  return (
+      <Link className="border-2 border-slate-400 p-1 m-1" href="/week-10">Back</Link>
+  );
+
 }
 

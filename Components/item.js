@@ -56,8 +56,8 @@ export const Item = ({items, onItemSelect}) => {
             className="item-list cursor-pointer flex flex-col border-2 border-sky-300 p-2 m-2 hover:bg-sky-500" 
             onClick={() => onItemSelect(item)}
           >
-            <div className="flex justify-center">{item.quantity} - {item.name}</div>
-            <div className="flex justify-center">{item.category}</div>
+            <div className="flex justify-center capitalize font-bold">{item.name}</div>
+            <div className="flex justify-center">Buy {item.quantity} - {item.category}</div>
           </li>
         ))}
       </ul>
